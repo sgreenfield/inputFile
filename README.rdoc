@@ -1,0 +1,26 @@
+= fileStyle is a lightweight (1.51KB) jQuery plugin allowing complete CSS styling of <input type="file"> elements.
+
+== Overview
+
+I created this plugin because it is impossible to achieve uniform cross-browser styling of the <input type="file"> using only CSS.
+In fact, Firefox 4.0 and lower doesn't even allow you to set the width in pixels.
+
+The one plugin I was able to find that did something similar to this one, required a fixed width, an image for the "Browse..." button, and it had far too many cross-browser bugs.
+
+This plugin solves those problems and more.  Please create an issue for any bugs discovered, or email me at jquery.fun@gmail.com
+
+== Usage Examples
+
+            $(document).ready(function(){
+            
+                $('.input-file-example-one').inputFile(); //gray button by default
+                
+                $('.input-file-example-two').inputFile({
+                    btnClass: 'btn-blue'
+                });
+                
+            });
+
+== Copyright
+
+Copyright (c) 2011 Scott Greenfield. See LICENSE for details.

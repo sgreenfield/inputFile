@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>inputFile Example</title>
+        <link href="css/jquery-inputfile.css" rel="stylesheet" type="text/css">
+        <link href="css/example.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="js/jquery.inputfile.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.input-file-example-one').inputFile(); //gray
+                
+                $('.input-file-example-two').inputFile({ //blue
+                    btnClass: 'btn-blue'
+                });
+            });
+        </script>
+    </head>
+    
+    <body style="margin:12px;">
+        <p style="margin-bottom:24px;">
+            Most recent version and help / support found here:  <a href="https://github.com/sgreenfield/">https://github.com/sgreenfield/</a>
+        </p>
+        <p>
+            <label>Gray Example</label>
+            <input type="file" class="input-file-example-one" />
+        </p>
+        <p>
+            <label>Blue Example</label>
+            <input type="file" class="input-file-example-two" />
+        </p>
+    </body>
+</html>

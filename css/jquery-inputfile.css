@@ -1,0 +1,29 @@
+/* Most users won't need to edit this part */
+.jquery-input-file-fake-file{
+    float: left;
+    position:relative;
+    z-index:1;
+}
+.jquery-input-file-outer-wrapper{
+    overflow:hidden;
+}
+.jquery-input-file{
+    cursor: pointer;
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin:-1px -1px 0 0;
+}
+.jquery-input-file-wrapper{
+    float: left;
+    margin-left: 6px;
+    position: relative;
+    z-index:2;
+    font-size: 12px !important;
+    font-weight: bold;
+    height: 22px;
+    line-height: 24px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
