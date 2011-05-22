@@ -11,7 +11,7 @@
 }
 
 /* blue button */
-.btn-blue{
+div.btn-blue{
     background-color:#6BC5ED;
     background: -webkit-gradient(
         linear,
@@ -30,14 +30,14 @@
     padding: 0 18px 4px;
     text-shadow: -1px 1px 1px #404040;
 }
-.btn-blue:hover{
+div.btn-blue:hover{
     border-color:#135572;
     color:#1F1F1F;
     text-shadow: -1px 1px 1px #fff;
 }
 
 /* gray button */
-.btn-gray{
+div.btn-gray{
     background-color:#CECECE;
     background: -webkit-gradient(
         linear,
@@ -57,7 +57,7 @@
     padding: 0 18px 4px;
     text-shadow: -1px 1px 1px #404040;
 }
-.btn-gray:hover{
+div.btn-gray:hover{
     border-color:#e4e4e4;
     color:#363636;
     text-shadow: -1px 1px 1px #fff;
