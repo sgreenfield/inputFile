@@ -20,13 +20,12 @@
         
         return this.each(function(i) {
             var $inputFile = $(this),
-                width = $inputFile.outerWidth(),
                 wrapper = $('<div class="' + settings.btnClass + '">' + settings.btnText + '</div>').addClass('jquery-input-file-wrapper'),
                 id = 'file_' + i,
                 $fakeInputFile = $('<input class="jquery-input-file-fake-file" id="' + id + '">'),
                 inputFileWidth, inputFileHeight;
                 
-            if (iecatch.indexOf("true6") != -1) return; //if using ie6, who cares... please die in a fire
+            if (iecatch.indexOf("true6") !== -1) return; //if using ie6, who cares... please die in a fire
 
             $fakeInputFile.insertBefore($inputFile)
                 .focus(function(){
@@ -49,7 +48,7 @@
             $inputFile.parent('.jquery-input-file-wrapper').after('<div style="clear:both;"></div>');
  
             inputFileWidth = $inputFile.parent('.jquery-input-file-wrapper').outerWidth() + $fakeInputFile.outerWidth();
-            inputFileHeight = $fakeInputFile.outerHeight()
+            inputFileHeight = $fakeInputFile.outerHeight();
 
             $inputFile.css('height', inputFileHeight);
             
