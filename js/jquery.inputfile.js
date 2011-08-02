@@ -30,7 +30,7 @@
             $fakeInputFile.insertBefore($inputFile)
                 .focus(function(){
                     if (iecatch.indexOf("true") === 0) $fakeInputFile.blur(); //fixes ie bug (all versions... go figure)
-                    $inputFile.click();
+                    //$inputFile.click(); //this is too inconsistent and buggy
                 }).keydown(function(e){
                     var code = e.keyCode || e.which;
                     if (code!==9 && code !==13) return false; //allow tab and enter key, but nothing else
